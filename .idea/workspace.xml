@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37424c79-2747-4b27-bf37-272bee6ae54f" name="Changes" comment="Остановился на опрелении функции Get">
+    <list default="true" id="37424c79-2747-4b27-bf37-272bee6ae54f" name="Changes" comment="Получил корректный ответ от функции Create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -73,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652545848097</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Получил корректный ответ от функции Create">
+      <created>1652609908299</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652609908299</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Остановился на опрелении функции Get" />
-    <option name="LAST_COMMIT_MESSAGE" value="Остановился на опрелении функции Get" />
+    <MESSAGE value="Получил корректный ответ от функции Create" />
+    <option name="LAST_COMMIT_MESSAGE" value="Получил корректный ответ от функции Create" />
   </component>
 </project>

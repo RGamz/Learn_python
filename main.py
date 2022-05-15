@@ -1,5 +1,5 @@
 namespaces = {'global': None}
-variables = {}
+variables = {'global': []}
 
 def Create(x):
     """
@@ -28,7 +28,7 @@ def Add(x):
     a.append(arg)
 
 
-def Get(x):
+def Get(namespace, arg):
     """
     get <namespace> <var>
     получить имя пространства, из которого будет взята переменная <var>
@@ -39,11 +39,14 @@ def Get(x):
         get bar a
         get bar b
     """
-    for key, value in namespaces.items():
-        if value == arg:
-            print("ok")
-        else:
-            return None
+    if arg in variables.values():
+        return namespace
+    else:
+        for key, value in namespaces.items():
+            if value == arg:
+                print(key)
+            else:
+                print("None")
 
 for i in range(int(input())):
     cmd, namespace, arg = input().split()
@@ -52,7 +55,7 @@ for i in range(int(input())):
     elif cmd == "add":
         Add(cmd)
     elif cmd == "get":
-        Get(cmd)
+        Get(namespace, arg)
 
 
 print(namespaces)
