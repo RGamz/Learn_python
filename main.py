@@ -39,19 +39,26 @@ def Get(arg):
         get bar a
         get bar b
     """
+    def Check(arg):
+        """проходим по двум словарям и выдаем либо ответ либо None_found"""
+        for key1, value1 in variables.items():
+            for x in value1:
+                if arg == x:
+                    return key1
+                else:
+                    for key2, value2 in namespaces.items():
+                        if arg == value2:
+                            return key2
 
-    if arg in variables.values():
-        for key, value in variables.items():
-            if value == arg:
-                return key
-    elif arg in namespaces.values():
-        for key, value in namespaces.items():
-            if value == arg:
-                return key
+    if Check(arg) is None:
+        return "None"
     else:
-        print("Error")
+        return Check(arg)
 
-for i in range(int(input()) - 1):
+
+r = int(input()) - 1
+
+for i in range(r):
     cmd, namespace, arg = input().split()
     if cmd == "create":
         Create(cmd)
@@ -63,6 +70,7 @@ for i in range(int(input()) - 1):
 
 print(namespaces)
 print(variables)
+
 
 """
 
@@ -78,6 +86,23 @@ get bar a
 get bar b
 
 """
-
-
-
+#
+# namespaces = {'global': None, 'foo': 'global', 'bar': 'foo'}
+# variables = {'global': ['a'], 'foo': ['b'], 'bar': ['a']}
+#
+# def Get(arg):
+#     for key1, value1 in variables.items():
+#         for x in value1:
+#             if arg == x:
+#                 return key1
+#             else:
+#                 for key2, value2 in namespaces.items():
+#                     for y in value2:
+#                         if arg == y:
+#                             return key2
+#                         else:
+#                             print("Error")
+#
+# arg = input()
+#
+# print(Get(arg))
