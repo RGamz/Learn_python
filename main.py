@@ -28,7 +28,7 @@ def Add(x):
     a.append(arg)
 
 
-def Get(arg):
+def Get(namespace, arg):
     """
     get <namespace> <var>
     получить имя пространства, из которого будет взята переменная <var>
@@ -39,21 +39,32 @@ def Get(arg):
         get bar a
         get bar b
     """
-    def Check(arg):
-        """проходим по двум словарям и выдаем либо ответ либо None_found"""
-        for key1, value1 in variables.items():
-            for x in value1:
-                if arg == x:
-                    return key1
-                else:
-                    for key2, value2 in namespaces.items():
-                        if arg == value2:
-                            return key2
 
-    if Check(arg) is None:
-        return "None"
+    def variables_func(namespace, arg):
+        for key, value in variables.items():
+            for x in value:
+                if arg == x:
+                    if key == namespace:
+                        return key
+                    else:
+                        continue
+                else:
+                    continue
+
+    def namespaces_func(namespace):
+        for key, value in namespaces.items():
+            if namespace == key:
+                return value
+            else:
+                pass
+
+    if variables_func(namespace, arg) is None:
+        if namespaces_func(namespace) is None:
+            print("None_nam")
+        else:
+            return namespaces_func(namespace)
     else:
-        return Check(arg)
+        return variables_func(namespace, arg)
 
 
 r = int(input()) - 1
@@ -65,7 +76,7 @@ for i in range(r):
     elif cmd == "add":
         Add(cmd)
     elif cmd == "get":
-        print(Get(arg))
+        print(Get(namespace, arg))
 
 
 print(namespaces)

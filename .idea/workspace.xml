@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37424c79-2747-4b27-bf37-272bee6ae54f" name="Changes" comment="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Функция Get не работает - по неизвестной причине, функция не ищет в значениях словарей нужную переменную и сразу переходит на вывод исключения">
+    <list default="true" id="37424c79-2747-4b27-bf37-272bee6ae54f" name="Changes" comment="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Функция Get работает частично: функция возвращает переменную а первую, а не ту, что нужно по ключу. также цикл проходится не 9 раз">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -94,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653119458514</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Функция Get работает частично: функция возвращает переменную а первую, а не ту, что нужно по ключу. также цикл проходится не 9 раз">
+      <created>1653139101894</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653139101894</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +120,7 @@
     <MESSAGE value="Получил корректный ответ от функции Create" />
     <MESSAGE value="Получил корректный ответ от функции Create&#10;Функция Get не работает" />
     <MESSAGE value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Функция Get не работает - по неизвестной причине, функция не ищет в значениях словарей нужную переменную и сразу переходит на вывод исключения" />
-    <option name="LAST_COMMIT_MESSAGE" value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Функция Get не работает - по неизвестной причине, функция не ищет в значениях словарей нужную переменную и сразу переходит на вывод исключения" />
+    <MESSAGE value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Функция Get работает частично: функция возвращает переменную а первую, а не ту, что нужно по ключу. также цикл проходится не 9 раз" />
+    <option name="LAST_COMMIT_MESSAGE" value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Функция Get работает частично: функция возвращает переменную а первую, а не ту, что нужно по ключу. также цикл проходится не 9 раз" />
   </component>
 </project>
