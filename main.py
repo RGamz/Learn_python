@@ -1,5 +1,6 @@
 namespaces = {'global': None}
 variables = {'global': []}
+temp_namespace = []
 
 def Create(x):
     """
@@ -54,22 +55,26 @@ def Get(namespace, arg):
     def namespaces_func(namespace):
         for key, value in namespaces.items():
             if namespace == key:
+                temp_namespace.clear()
+                temp_namespace.append(value)
                 return value
             else:
                 pass
+
 
     if variables_func(namespace, arg) is None:
         if namespaces_func(namespace) is None:
             print("None_nam")
         else:
-            return namespaces_func(namespace)
+            for key, value in variables.items():
+                if temp_namespace[0] == key:
+                    if arg == value[0]:
+                        return key
     else:
         return variables_func(namespace, arg)
 
 
-r = int(input()) - 1
-
-for i in range(r):
+for i in range(int(input()) - 1):
     cmd, namespace, arg = input().split()
     if cmd == "create":
         Create(cmd)
@@ -97,23 +102,3 @@ get bar a
 get bar b
 
 """
-#
-# namespaces = {'global': None, 'foo': 'global', 'bar': 'foo'}
-# variables = {'global': ['a'], 'foo': ['b'], 'bar': ['a']}
-#
-# def Get(arg):
-#     for key1, value1 in variables.items():
-#         for x in value1:
-#             if arg == x:
-#                 return key1
-#             else:
-#                 for key2, value2 in namespaces.items():
-#                     for y in value2:
-#                         if arg == y:
-#                             return key2
-#                         else:
-#                             print("Error")
-#
-# arg = input()
-#
-# print(Get(arg))
