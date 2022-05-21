@@ -28,7 +28,7 @@ def Add(x):
     a.append(arg)
 
 
-def Get(namespace, arg):
+def Get(arg):
     """
     get <namespace> <var>
     получить имя пространства, из которого будет взята переменная <var>
@@ -39,23 +39,26 @@ def Get(namespace, arg):
         get bar a
         get bar b
     """
+
     if arg in variables.values():
-        return namespace
-    else:
+        for key, value in variables.items():
+            if value == arg:
+                return key
+    elif arg in namespaces.values():
         for key, value in namespaces.items():
             if value == arg:
-                print(key)
-            else:
-                print("None")
+                return key
+    else:
+        print("Error")
 
-for i in range(int(input())):
+for i in range(int(input()) - 1):
     cmd, namespace, arg = input().split()
     if cmd == "create":
         Create(cmd)
     elif cmd == "add":
         Add(cmd)
     elif cmd == "get":
-        Get(namespace, arg)
+        print(Get(arg))
 
 
 print(namespaces)
