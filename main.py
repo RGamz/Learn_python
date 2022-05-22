@@ -2,7 +2,7 @@ namespaces = {'global': None}
 variables = {'global': []}
 temp_namespace = []
 
-def Create(x):
+def Create(namespace):
     """
     Create <namespace> <parent>
     создать новое пространство имен с именем <namespace> внутри пространства <parent>
@@ -10,7 +10,7 @@ def Create(x):
         create foo global
         create bar foo
     """
-    if cmd in namespaces:
+    if namespace in namespaces:
         pass
     else:
         namespaces[namespace] = arg
@@ -61,10 +61,10 @@ def Get(namespace, arg):
             else:
                 pass
 
-
     if variables_func(namespace, arg) is None:
         if namespaces_func(namespace) is None:
-            print("None_nam")
+            print("None")
+            exit()
         else:
             for key, value in variables.items():
                 if temp_namespace[0] == key:
@@ -74,10 +74,10 @@ def Get(namespace, arg):
         return variables_func(namespace, arg)
 
 
-for i in range(int(input()) - 1):
+for i in range(int(input())):
     cmd, namespace, arg = input().split()
     if cmd == "create":
-        Create(cmd)
+        Create(namespace)
     elif cmd == "add":
         Add(cmd)
     elif cmd == "get":
