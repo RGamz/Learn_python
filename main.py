@@ -1,4 +1,4 @@
-namespaces = {'global': None}
+namespaces = {'global': "None"}
 variables = {'global': []}
 
 def Create(namespace):
@@ -14,7 +14,7 @@ def Create(namespace):
     else:
         namespaces[namespace] = arg
 
-def Add(x):
+def Add(namespace, arg):
     """
     add <namespace> <var>
     добавить в пространство <namespace> переменную <var>
@@ -23,12 +23,24 @@ def Add(x):
         add foo b
         add bar a
     """
-    variables[namespace] = []
+    if namespace in variables.keys():
+        pass
+    else:
+        variables[namespace] = []
+
     a = variables[namespace]
     a.append(arg)
 
 
 def get(namespace, arg):
+
+    def check_fun(namespace):
+        for key in namespaces.keys():
+            if namespace == key:
+                return "True"
+            else:
+                continue
+
 
     def check_var(arg):
         for key, value in variables.items():
@@ -51,13 +63,17 @@ def get(namespace, arg):
                 else:
                     continue
 
-
     if check_var(arg) is None:
+        return None
+    elif check_fun(namespace) is None:
         return None
     else:
         if get_var(namespace, arg) is None:
             namespace = namespaces[namespace]
-            return get(namespace, arg)
+            if namespace == "None":
+                return "None"
+            else:
+                return get(namespace, arg)
         else:
             return get_var(namespace, arg)
 
@@ -67,7 +83,7 @@ for i in range(int(input())):
     if cmd == "create":
         Create(namespace)
     elif cmd == "add":
-        Add(cmd)
+        Add(namespace, arg)
     elif cmd == "get":
         print(get(namespace, arg))
 
