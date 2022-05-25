@@ -1,6 +1,5 @@
 namespaces = {'global': None}
 variables = {'global': []}
-temp_namespace = []
 
 def Create(namespace):
     """
@@ -29,19 +28,19 @@ def Add(x):
     a.append(arg)
 
 
-def Get(namespace, arg):
-    """
-    get <namespace> <var>
-    получить имя пространства, из которого будет взята переменная <var>
-    при запросе из пространства <namespace>, или None, если такого пространства не существует
-    Примеры:
-        get foo a
-        get foo с
-        get bar a
-        get bar b
-    """
+def get(namespace, arg):
 
-    def variables_func(namespace, arg):
+    def check_var(arg):
+        for key, value in variables.items():
+            for x in value:
+                if arg == x:
+                    return "True"
+                else:
+                    continue
+            else:
+                continue
+
+    def get_var(namespace, arg):
         for key, value in variables.items():
             for x in value:
                 if arg == x:
@@ -52,26 +51,15 @@ def Get(namespace, arg):
                 else:
                     continue
 
-    def namespaces_func(namespace):
-        for key, value in namespaces.items():
-            if namespace == key:
-                temp_namespace.clear()
-                temp_namespace.append(value)
-                return value
-            else:
-                pass
 
-    if variables_func(namespace, arg) is None:
-        if namespaces_func(namespace) is None:
-            print("None")
-            exit()
-        else:
-            for key, value in variables.items():
-                if temp_namespace[0] == key:
-                    if arg == value[0]:
-                        return key
+    if check_var(arg) is None:
+        return None
     else:
-        return variables_func(namespace, arg)
+        if get_var(namespace, arg) is None:
+            namespace = namespaces[namespace]
+            return get(namespace, arg)
+        else:
+            return get_var(namespace, arg)
 
 
 for i in range(int(input())):
@@ -81,7 +69,7 @@ for i in range(int(input())):
     elif cmd == "add":
         Add(cmd)
     elif cmd == "get":
-        print(Get(namespace, arg))
+        print(get(namespace, arg))
 
 
 print(namespaces)
