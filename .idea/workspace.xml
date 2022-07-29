@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37424c79-2747-4b27-bf37-272bee6ae54f" name="Changes" comment="Получил корректный ответ от вывода вводимого списка.">
+    <list default="true" id="37424c79-2747-4b27-bf37-272bee6ae54f" name="Changes" comment="Получил корректный ответ от вывода вводимого списка.&#10;Получил корректный ответ от 1й внешней функии.">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659079157512</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Получил корректный ответ от вывода вводимого списка.&#10;Получил корректный ответ от 1й внешней функии.">
+      <created>1659079577279</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659079577279</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +191,7 @@
     <MESSAGE value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Решение проходит не все тесты. Идет работа над тестами." />
     <MESSAGE value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Все тесты пройдены успешно.&#10;Пространство имен в функциях реализовано успешно." />
     <MESSAGE value="Получил корректный ответ от вывода вводимого списка." />
-    <option name="LAST_COMMIT_MESSAGE" value="Получил корректный ответ от вывода вводимого списка." />
+    <MESSAGE value="Получил корректный ответ от вывода вводимого списка.&#10;Получил корректный ответ от 1й внешней функии." />
+    <option name="LAST_COMMIT_MESSAGE" value="Получил корректный ответ от вывода вводимого списка.&#10;Получил корректный ответ от 1й внешней функии." />
   </component>
 </project>
