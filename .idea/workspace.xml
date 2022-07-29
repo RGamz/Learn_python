@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37424c79-2747-4b27-bf37-272bee6ae54f" name="Changes" comment="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Решение проходит не все тесты. Идет работа над тестами.">
+    <list default="true" id="37424c79-2747-4b27-bf37-272bee6ae54f" name="Changes" comment="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Все тесты пройдены успешно.&#10;Пространство имен в функциях реализовано успешно.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -9,6 +9,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,6 +29,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -34,6 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -123,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653464197266</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Все тесты пройдены успешно.&#10;Пространство имен в функциях реализовано успешно.">
+      <created>1653492455625</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653492455625</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,7 +149,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -146,6 +176,7 @@
     <MESSAGE value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Функция Get работает частично" />
     <MESSAGE value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Цикл не отрабатывает до 9го шага" />
     <MESSAGE value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Решение проходит не все тесты. Идет работа над тестами." />
-    <option name="LAST_COMMIT_MESSAGE" value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Решение проходит не все тесты. Идет работа над тестами." />
+    <MESSAGE value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Все тесты пройдены успешно.&#10;Пространство имен в функциях реализовано успешно." />
+    <option name="LAST_COMMIT_MESSAGE" value="Получил корректный ответ от функции Create&#10;Получил корректный ответ от функции Add&#10;Получил корректный ответ от функции Get&#10;Все тесты пройдены успешно.&#10;Пространство имен в функциях реализовано успешно." />
   </component>
 </project>
